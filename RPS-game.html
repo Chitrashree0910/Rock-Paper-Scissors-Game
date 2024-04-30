@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="RPS-game.css">
+</head>
+<body>
+    <!-- Heading of the game -->
+    <h1>Rock Paper Scissors</h1>
+
+    <!--Adding rock paper scissors images-->
+    <div id="choices">
+        <div class="choice" id="rock">
+            <img src="./images/rock_image.png" alt="rock_image">
+        </div>
+        <div class="choice" id="paper">
+            <img src="./images/paper_image.png" alt="rock_image">
+        </div>
+        <div class="choice" id="scissors">
+            <img src="./images/scissors_image.png" alt="rock_image">
+        </div>
+    </div>
+
+    <!--Score board of the game that shows number of wins-->
+    <div id="score-board">
+        <div id="score">
+            <p id="user-score">0</p> <!--giving id for both is coz the value will be updating as when we play the game-->
+            <p>You</p>
+        </div>
+        <div id="score">
+            <p id="computer-score">0</p>
+            <p>Computer</p>
+        </div>
+    </div>
+
+    <!--Message board displaying to play or game over or winning message-->
+    <div id="msg-board">
+        <p id="msg">Play your move</p>
+    </div>
+    
+    <script src="RPS-game.js"></script>
+</body>
+</html>
